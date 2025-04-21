@@ -9,9 +9,9 @@ app.use(express.json());
 // PostgreSQL kapcsolat konfigurálása
 const pool = new Pool({
     user: 'szotanulo_db_user', // Cseréld ki a Render által megadott felhasználónévre
-    host: 'oregon-postgres.render.com', // Cseréld ki a Render által megadott hostra
+    host: 'postgresql://szotanulo_db_user:CsgZynA9EzCBMWsfgGbapeJ9luVdkNuR@dpg-d02lu8re5dus73builg0-a.oregon-postgres.render.com/szotanulo_db', // Cseréld ki a Render által megadott hostra
     database: 'szotanulo_db',
-    password: 'kL5pQ2vX8yN9mW3rT6uJ0hA4dF7gI2', // Cseréld ki a Render által megadott jelszóra
+    password: 'CsgZynA9EzCBMWsfgGbapeJ9luVdkNuR', // Cseréld ki a Render által megadott jelszóra
     port: 5432,
     ssl: { rejectUnauthorized: false }
 });
